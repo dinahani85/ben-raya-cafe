@@ -1,0 +1,9 @@
+{
+  "name": "بن رايا — Ben Raya Café",
+  "short_name": "Ben Raya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEE3D2",
+  "theme_color": "#2A1B14",
+  "icons": [{ "src": "/images/brand/icon-512.png", "sizes": "512x512", "type": "image/png" }]
+}

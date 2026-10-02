@@ -1,0 +1,9 @@
+# Cloudflare deploy settings.
+# The site is fully static: `npm run build` creates ./dist, and Cloudflare serves those files as-is.
+# Works with Git-connected Workers builds (deploy command: `npx wrangler deploy`).
+# `name` must match the project name shown in your Cloudflare dashboard.
+name = "ben-raya-cafe"
+compatibility_date = "2026-09-01"
+
+[assets]
+directory = "./dist"

@@ -1,0 +1,94 @@
+/* ─────────────────────────────────────────────────────────────
+   BEN RAYA DESIGN TOKENS
+   Colors, type and spacing used across the site. Change a value
+   here and it updates everywhere.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Parchment surfaces */
+  --parchment: #ece0cd;
+  --parchment-2: #e3d4bd;
+  --cream: #f7efe3;
+  --paper: #fbf7f0;
+
+  /* Ink (espresso browns) */
+  --ink: #2a1a13;
+  --ink-2: #4f3a2d;
+  --ink-3: #735d4b;
+  --line: rgba(74, 48, 33, 0.11);
+  --line-strong: rgba(74, 48, 33, 0.2);
+
+  /* Raya red — the brand accent from the logo */
+  --raya-500: #b5373c;
+  --raya-600: #a1242a;
+  --raya-700: #841c21;
+
+  /* Olive — WhatsApp CTA and leaves */
+  --olive-500: #6f7b4c;
+  --olive-600: #4f5b39;
+  --olive-700: #3b4630;
+  --olive-800: #2e3726;
+
+  /* Warm metallic for hairlines and ornaments */
+  --brass: #b28d58;
+
+  /* Category accents (deep → used for card gradients and artwork) */
+  --mocha: #5b3a2a;
+  --mocha-deep: #3a251a;
+  --olive: #414c34;
+  --olive-deep: #283020;
+  --raya: #8a2228;
+  --raya-deep: #571419;
+  --espresso: #36261d;
+  --espresso-deep: #1e140f;
+  --umber: #7a4e30;
+  --umber-deep: #4b301e;
+
+  --footer-bg: #21160f;
+
+  /* Type */
+  --font-body: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, system-ui, sans-serif;
+  --font-script: 'Aref Ruqaa', 'IBM Plex Sans Arabic', serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem);
+  --fs-hero: clamp(2.6rem, 1.6rem + 4.6vw, 4.6rem);
+
+  /* Shape and depth */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+  /* Softer, calmer depth */
+  --shadow-soft: 0 10px 26px -20px rgba(58, 32, 18, 0.4);
+  --shadow-card: 0 18px 36px -26px rgba(42, 22, 12, 0.5);
+  --shadow-thumb: 0 6px 14px -10px rgba(42, 22, 12, 0.4);
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: clamp(16px, 4.5vw, 36px);
+  --header-h: 68px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Direction helpers (set per dir below) */
+  --to-end: to right;
+  --to-start: to left;
+  --slide-from: -100%;
+}
+
+[dir='rtl'] {
+  --to-end: to left;
+  --to-start: to right;
+  --slide-from: 100%;
+}
+
+/* Accent classes used by categories */
+.accent-mocha { --accent: var(--mocha); --accent-deep: var(--mocha-deep); }
+.accent-olive { --accent: var(--olive); --accent-deep: var(--olive-deep); }
+.accent-raya { --accent: var(--raya); --accent-deep: var(--raya-deep); }
+.accent-espresso { --accent: var(--espresso); --accent-deep: var(--espresso-deep); }
+.accent-umber { --accent: var(--umber); --accent-deep: var(--umber-deep); }
